@@ -1,0 +1,2 @@
+openconnect:
+  pkg.installed

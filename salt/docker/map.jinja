@@ -1,0 +1,13 @@
+
+{% set codename = grains.get('oscodename') %}
+{% if codename == 'yakkety' %}
+  {% set codename = 'xenial' %}
+{% endif %}
+
+{% set docker = salt['grains.filter_by']({
+  'Debian': {
+     'engine': 'docker-engine',
+     'repository': 'deb https://apt.dockerproject.org/repo ubuntu-' + codename + ' main',
+     'keyserver': 'hkp://ha.pool.sks-keyservers.net:80',
+     'keyid': '58118E89F3A912897C070ADBF76221572C52609D'}
+}) %}

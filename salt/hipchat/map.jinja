@@ -1,0 +1,7 @@
+{% set hipchat = salt['grains.filter_by']({
+    'Debian': {
+        'client': 'hipchat4',
+        'source': 'deb https://atlassian.artifactoryonline.com/atlassian/hipchat-apt-client yakkety main',
+        'source_key': 'https://atlassian.artifactoryonline.com/atlassian/api/gpg/key/public',
+    }
+}) %}

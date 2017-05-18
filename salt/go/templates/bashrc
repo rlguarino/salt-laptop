@@ -1,0 +1,6 @@
+# Set GoPath to users current
+export GOROOT={{ goroot }}
+export GOPATH=$HOME/go
+
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
