@@ -2,12 +2,10 @@ file_client: local
 
 grains:
   roles:
-    - cloudflare
-    - development
+    - graphical
     - docker
     - laptop
     - kvm
-  type: xps-13
 
 file_roots:
   base:

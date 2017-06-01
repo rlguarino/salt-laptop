@@ -17,7 +17,7 @@ base:
     - python.virtualenv
     - silversearcher
     - vim
-  'roles:laptop':
+  'roles:graphical':
     - match: grain
     - chrome
     - i3
