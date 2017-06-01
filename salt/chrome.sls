@@ -12,5 +12,6 @@ install-google-chrome:
 finish-google-chrome-install:
   cmd.run:
     - name: apt-get update && apt-get -y install -f
-    - onchanges:
+    - onfail:
       - cmd: install-google-chrome
+
