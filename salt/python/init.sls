@@ -7,4 +7,4 @@ python3:
 
 pip:
   pkg.installed:
-    - name: pi
+    - name: python-pip
