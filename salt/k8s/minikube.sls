@@ -1,6 +1,6 @@
 minikube:
   file.managed:
     - name: /usr/local/bin/minikube
-    - source: https://storage.googleapis.com/minikube/releases/v0.14.0/minikube-linux-amd64
-    - source_hash: sha256=a9e8423474de6046c672db5b035475fc034223652b081d1accba89af7da5a5e0
+    - source: https://storage.googleapis.com/minikube/releases/v0.19.0/minikube-linux-amd64
+    - source_hash: sha256=1b3447b307fa256378c9541731cfc5d5b06128f88dab04b3cfc9deeeceddb2bf
     - mode: 755
