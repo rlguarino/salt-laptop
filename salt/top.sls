@@ -21,6 +21,7 @@ base:
     - match: grain
     - chrome
     - i3
+    - code
   'roles:cloudflare':
     - match: grain
     - hipchat
