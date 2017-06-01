@@ -15,6 +15,7 @@ base:
     - pkgs.common
     - python
     - python.virtualenv
+    - silversearcher
     - vim
   'roles:laptop':
     - match: grain
