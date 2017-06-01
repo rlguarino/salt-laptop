@@ -11,7 +11,7 @@ base:
     - kvm
     - k8s.kubectl
     - k8s.minikube
-    - node
+    - node-js
     - pkgs.common
     - python
     - python.virtualenv
