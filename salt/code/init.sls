@@ -11,3 +11,14 @@ finish-code-install:
     - name: apt-get update && apt-get -y install -f
     - onfail:
       - cmd: install-code
+
+{% set username = pillar['user']['username'] %}
+
+/home/{{ username }}/.bashrc.d/code:
+  file.managed:
+    - user: {{ username }}
+    - group: {{ username }}
+    - contents:
+      - alias code='code -n'
+    - require:
+      - file: /home/{{ username }}/.bashrc.d
