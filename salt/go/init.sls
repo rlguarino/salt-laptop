@@ -1,6 +1,9 @@
 {% from 'go/map.jinja' import go with context %}
 {% set username = pillar['user']['username'] %}
 
+include:
+  - bash
+
 download-go:
   file.managed:
     - name: /tmp/go{{ go.version }}.linux-amd64.tar.gz
