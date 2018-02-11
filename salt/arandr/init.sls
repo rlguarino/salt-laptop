@@ -1,2 +1,2 @@
-emacs-nox:
+arandr:
   pkg.installed

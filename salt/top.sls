@@ -11,7 +11,6 @@ base:
     - kvm
     - k8s.kubectl
     - k8s.minikube
-    - node-js
     - pkgs.common
     - python
     - python.virtualenv
@@ -22,6 +21,8 @@ base:
     - chrome
     - i3
     - code
+    - arandr
+    - kvm.virt-manager
   'roles:cloudflare':
     - match: grain
     - hipchat

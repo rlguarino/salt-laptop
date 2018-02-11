@@ -1,7 +1,7 @@
 install-code:
   file.managed:
-    - source: https://az764295.vo.msecnd.net/stable/19222cdc84ce72202478ba1cec5cb557b71163de/code_1.12.2-1494422229_amd64.deb
-    - source_hash: sha256=2d11fc52df0bd4935d69d27b700eec76e73139ec06a918c8ce6431ff5a736fad
+    - source: https://az764295.vo.msecnd.net/stable/7c4205b5c6e52a53b81c69d2b2dc8a627abaa0ba/code_1.19.3-1516876437_amd64.deb
+    - source_hash: sha256=e9256e80e30ebf48ed62b8f80b1808fb8dae49645e5facf4956a2e1e228a3252
     - name: /tmp/code.deb
   cmd.run:
     - name: dpkg -i /tmp/code.deb

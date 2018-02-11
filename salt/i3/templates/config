@@ -174,3 +174,9 @@ bindsym Shift+Print exec "scrot -q 100 -u '/home/ross/Pictures/Screenshots/%Y-%m
 
 # lock screen
 bindsym $mod+q exec i3lock -c 111111
+
+# Auto-Mount USB
+exec udiskie -t
+
+# Network manager tray
+exec nm-applet

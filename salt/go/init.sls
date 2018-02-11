@@ -24,3 +24,10 @@ go-path:
       goroot: /usr/local/go
     - require:
       - file: /home/{{ username }}/.bashrc.d
+
+/usr/local/bin/dep:
+  file.managed:
+    - source: https://github.com/golang/dep/releases/download/v0.4.1/dep-linux-amd64
+    - source_hash: sha256=31144e465e52ffbc0035248a10ddea61a09bf28b00784fd3fdd9882c8cbb2315
+    - mode: 755
+    - replace: True
